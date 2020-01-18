@@ -1,0 +1,31 @@
+IF EXIST ".\.vs" (
+    rmdir ".\.vs" /s /q
+)
+
+IF EXIST ".\bin" (
+    rmdir ".\bin" /s /q
+)
+
+IF EXIST ".\obj" (
+    rmdir ".\obj" /s /q
+)
+
+IF EXIST ".\ipch" (
+    rmdir ".\ipch" /s /q
+)
+
+IF EXIST ".\x64" (
+    rmdir ".\x64" /s /q
+)
+
+IF EXIST ".\Debug" (
+    rmdir ".\Debug" /s /q
+)
+
+del *.pro.user
+
+del *.db
+
+IF EXIST ".\transmitter_gui\obj" (
+    rmdir ".\transmitter_gui\obj" /s /q
+)
